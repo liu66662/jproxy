@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# 启动时立即执行 update-hosts.sh
+echo "Executing update-hosts.sh on container start..."
+/usr/local/bin/update-hosts.sh
+
 # 打印环境变量以进行调试
 echo "Environment Variables:"
 printenv
